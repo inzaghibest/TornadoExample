@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <h2>{%module hello()%}</h2>
+{% end %}
+
+{% block body %}
+    {%for book in books%}
+        {%module Book(book)%}
+    {%end%}
+{% end %}
+
+
+
+
+
+

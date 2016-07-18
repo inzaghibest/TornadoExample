@@ -1,0 +1,9 @@
+<div class="book">
+    <h3 class="book_title">{{ book["title"] }}</h3>
+    <img src="{{ book["image"] }}" class="book_image"/>
+    <div class="book_details">
+        <div class="book_date_added">
+            Added: {{ locale.format_date(book["date_added"], relative=False) }}
+        </div>
+    </div>
+</div>

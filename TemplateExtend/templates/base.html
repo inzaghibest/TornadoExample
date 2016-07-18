@@ -1,0 +1,35 @@
+
+
+<html>
+
+<head>
+    <title>{{ page_title }}</title>
+    <link rel="stylesheet" href="{{ static_url("css/style.css") }}" />
+</head>
+
+<body>
+        <div id="container">
+                <header>
+                    {% block header %}<h1>Burt's Books</h1>{% end %}
+                </header>
+
+                <div id="main">
+                        {% block body %}
+                        {% end %}
+                </div>
+
+            <footer>
+                {% block footer %}
+                    <p>
+        For more information about our selection, hours or events, please email us at
+        <a href="mailto:448435439@qq.com">448435439@qq.com</a>.
+                    </p>
+                {% end %}
+            </footer>
+
+        </div>
+
+    <script src="{{ static_url("js/script.js") }}"></script>
+</body>
+
+</html>
